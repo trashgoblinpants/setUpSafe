@@ -51,7 +51,7 @@ bot.onText(/\/getId/, async (msg) => {
 bot.onText(/\/getLink/, async (msg) => {
   const chatId = msg.chat.id;
   const telegramId = msg.from?.id!;
-  const spo = "http://170.75.165.123:3000";
+  const spo = "https://170.75.165.123.nip.io";
   const link = `${spo}?ail=${telegramId}`;
   await bot.sendMessage(chatId, `${link}`);
 });
